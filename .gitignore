@@ -1,0 +1,50 @@
+# Eşsiz Tatlar Hatay'dan - Git Ignore
+
+# Ortam ve gizli bilgiler
+.env
+.env.local
+.env.*.local
+
+# Dokümantasyon (yerel rehberler, notlar)
+docs/
+
+# IDE / Editör
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Log ve geçici dosyalar
+logs/
+*.log
+tmp/
+temp/
+cache/
+storage/
+
+# Yüklenen dosyalar (kullanıcı yüklemeleri)
+public/uploads/
+public/assets/images/products/
+!public/assets/images/products/.gitkeep
+
+# Composer (ileride kullanılırsa)
+vendor/
+
+# XAMPP / Apache
+.htaccess.local
+
+# Backup ve dump
+*.sql.backup
+*.bak
+database/backups/
+
+# Test / geliştirme
+.phpunit.result.cache
+coverage/
+.env.test
+node_modules/

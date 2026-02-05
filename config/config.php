@@ -18,6 +18,7 @@ define('PUBLIC_PATH', ROOT_PATH . '/public');
 define('CONFIG_PATH', ROOT_PATH . '/config');
 
 // Veritabanı ayarları (canlıda .env veya ortam değişkenleri kullanılabilir)
+// Gerçek bağlantı: app/Core/Database.php → Database::getConnection()
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'essiz_tatlar_hatay');
 define('DB_USER', 'root');
