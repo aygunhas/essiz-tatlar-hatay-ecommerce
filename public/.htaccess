@@ -1,0 +1,12 @@
+# public dizini - Tüm istekleri index.php'ye yönlendir
+# Gerçek dosya (css, js, resim) yoksa index.php'ye git
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /public/
+
+    # Var olan dosya veya dizin ise dokunma
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
